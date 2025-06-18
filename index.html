@@ -159,9 +159,19 @@
     <p><b>Año 2025</b></p>
     <p><i>Cristopher es un chico que trabaja del diez. Nadie tiene que decirle nada, trabaja de manera autónoma. Trabaja de manera rápida, efectiva y resolutiva. Un gusto de persona también, muy cordial y amable siempre y ante todo con una actitud fantástica de cara al trabajo.</i></p>
   </div>
-  <h2>Contacto y otros medios</h2>
-  <p><b>Correo:</b> cristopherpydev@protonmail.com</p>
-  <p><b>GitHub: </b><a href="https://github.com/cristophermc">¡Pincha aquí!</a></p> 
+  <h2>Ponte en contacto conmigo</h2>
+  <form action="mailto:cristopherpydev@protonmail.com" method="POST" enctype="text/plain">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="Nombre" required placeholder="Escribe aquí tu nombre"><br><br>
+
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" name="Correo" required placeholder="Introduce tu correo electrónico"><br><br>
+
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="Mensaje" rows="5" required placeholder="Escribeme sin problemas cualquier tipo de requerimientos o petición. No tardaré en responderte."></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
 </body>
 <script src="script.js">
 </script>
