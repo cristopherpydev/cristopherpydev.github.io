@@ -120,4 +120,23 @@ button:hover {
   margin-bottom: 20px; 
 }
 
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
 
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+form label {
+  font-weight: bold;
+}
