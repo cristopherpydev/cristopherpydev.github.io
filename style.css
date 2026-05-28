@@ -39,7 +39,3 @@ body {
 .card:hover .hidden{
   display: block;
 }
-a{
-  text-decoration: none;
-
-}
