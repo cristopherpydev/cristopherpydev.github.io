@@ -1,41 +1,112 @@
+    :root {
+      --bg-main: #0a0e17;
+      --bg-card: #111827;
+      --accent-glow: #00ffcc;
+      --text-main: #e2e8f0;
+      --text-muted: #94a3b8;
+      --terminal-header: #1e293b;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+    }
 
+    /* FONTS */
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: rgb(33 37 41) ;
-  line-height: 1.6;
-  margin: auto;
-}
-.presentation{
-  max-width: 1000px;
-  
-}
-.stack-container{
-  background-color: #151e2c;
-}
-.stack{
-  background-color: #151e2c;
-}
-.experience-container{
-  background-color: #343e4e;
-}
-.experience{
-  background-color: #343e4e;
+    h1, h2, h3, h4, .font-mono {
+      font-family: 'Fira Code', monospace;
+      font-weight: 600;
+    }
 
-}
-.projects-container{
-  background-color: #425e8b;
-}
-.projects{
-  background-color: #425e8b;
+    /* TERMINAL LYT */
 
-}
-.card{
-  padding: 20px;
-}
-.hidden{
-  display: none;
-}
-.card:hover .hidden{
-  display: block;
-}
+    .terminal-window {
+      background: #0d1117;
+      border-radius: 10px;
+      border: 1px solid #30363d;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      margin-bottom: 2rem;
+    }
+
+    .terminal-header {
+      background: var(--terminal-header);
+      padding: 10px 15px;
+      display: flex;
+      gap: 8px;
+      border-bottom: 1px solid #30363d;
+    }
+
+    /* DOTS & TERMINAL */
+    .dot { width: 12px; height: 12px; border-radius: 50%; }
+    .dot.red { background: #ff5f56; }
+    .dot.yellow { background: #ffbd2e; }
+    .dot.green { background: #27c93f; }
+    
+    .terminal-body {
+      padding: 20px;
+      color: #58a6ff; 
+      font-size: 0.95rem;
+    }
+
+    .terminal-body .output { color: #a5d6ff; }
+    .terminal-body .string { color: #7ee787; }
+
+    .tech-card {
+      background-color: var(--bg-card);
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 1.5rem;
+      height: 100%;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tech-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent-glow);
+      box-shadow: 0 0 20px rgba(0, 255, 204, 0.15);
+    }
+
+    .badge-cyber {
+      background-color: rgba(0, 255, 204, 0.1);
+      color: var(--accent-glow);
+      border: 1px solid rgba(0, 255, 204, 0.3);
+      font-family: 'Fira Code', monospace;
+      font-weight: 400;
+      padding: 0.5em 0.8em;
+    }
+
+    .badge-version {
+      background-color: rgba(255, 189, 46, 0.1);
+      color: #ffbd2e;
+      border: 1px solid rgba(255, 189, 46, 0.3);
+    }
+
+    .btn-cyber {
+      background-color: transparent;
+      color: var(--accent-glow);
+      border: 1px solid var(--accent-glow);
+      font-family: 'Fira Code', monospace;
+      transition: all 0.3s ease;
+    }
+    .btn-cyber:hover {
+      background-color: var(--accent-glow);
+      color: var(--bg-main);
+      box-shadow: 0 0 15px var(--accent-glow);
+    }
+
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg-main); }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--accent-glow); }
+    
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--accent-glow);
+      padding-left: 1rem;
+    }
