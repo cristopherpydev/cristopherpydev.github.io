@@ -23,7 +23,7 @@
     /* TERMINAL LYT */
 
     .terminal-window {
-      background: #0d1117;
+      background: #111b13;
       border-radius: 10px;
       border: 1px solid #30363d;
       overflow: hidden;
@@ -36,7 +36,7 @@
       padding: 10px 15px;
       display: flex;
       gap: 8px;
-      border-bottom: 1px solid #30363d;
+      border-bottom: 1px solid #000000;
     }
 
     /* DOTS & TERMINAL */
@@ -51,12 +51,12 @@
       font-size: 0.95rem;
     }
 
-    .terminal-body .output { color: #a5d6ff; }
+    .terminal-body .output { color: #e9ba64; }
     .terminal-body .string { color: #7ee787; }
 
     .tech-card {
       background-color: var(--bg-card);
-      border: 1px solid #1f2937;
+      border: 1px solid #57697c;
       border-radius: 12px;
       padding: 1.5rem;
       height: 100%;
@@ -68,7 +68,7 @@
     .tech-card:hover {
       transform: translateY(-5px);
       border-color: var(--accent-glow);
-      box-shadow: 0 0 20px rgba(0, 255, 204, 0.15);
+      box-shadow: 0 0 20px #3ba130;
     }
 
     .badge-cyber {
@@ -101,7 +101,7 @@
 
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: var(--bg-main); }
-    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb { background: #dec95f; border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: var(--accent-glow); }
     
     .section-title {
@@ -110,3 +110,16 @@
       border-left: 4px solid var(--accent-glow);
       padding-left: 1rem;
     }
+
+.cursor {
+  display: inline-block;
+  color: #7ee787; 
+  font-weight: bold;
+  animation: blink 1s step-end infinite;
+  margin-left: 4px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
